@@ -11,7 +11,6 @@ document.getElementById("formContato").addEventListener("submit", function (e) {
     let nome = document.getElementById("nome").value.trim();
     let email = document.getElementById("email").value.trim();
     let msg = document.getElementById("mensagem").value.trim();
-    let status = document.getElementById("status");
 
     // Verificar campos vazios
     if (nome === "" || email === "" || msg === "") {

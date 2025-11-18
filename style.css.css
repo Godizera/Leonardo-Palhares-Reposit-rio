@@ -1,0 +1,96 @@
+/* Estilo geral do site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+/* MENU FIXO NO TOPO */
+header {
+    width: 100%;
+    background: #222;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#temaBtn {
+    margin-right: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* SEÇÕES */
+section {
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    border-left: 5px solid #333;
+    padding-left: 10px;
+}
+
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* TEMA ESCURO DINÂMICO */
+.dark {
+    background: #111;
+    color: white;
+}
+
+.dark header {
+    background: #000;
+}
+
+.dark nav ul li a {
+    color: white;
+}
+
+.dark input, .dark textarea {
+    background: #333;
+    color: white;
+}
